@@ -24,3 +24,21 @@ Before running this application, ensure that you have:
   ```bash
   go get github.com/ethereum/go-ethereum
   go get github.com/joho/godotenv
+
+## Setup
+
+1. **Environment Variables**: Create a `.env` file in the root directory of the project and add the following environment variable:
+
+    ```env
+    ETHEREUM_NODE_URL=http://localhost:8545
+    ```
+
+    Replace `http://localhost:8545` with the URL of your Ethereum node.
+
+## Running the Application
+
+1. Open your terminal.
+2. Navigate to the root directory of the project.
+3. Run `go run bc-number-transactions.go`.
+
+The application will now start and monitor the Ethereum node. It logs the total number of transactions in the last minute every minute.
